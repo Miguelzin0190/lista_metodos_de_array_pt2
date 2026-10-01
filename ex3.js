@@ -5,3 +5,6 @@ const produtos = [
   { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
+const ativos = produtos.filter((produto) => produto.ativo)
+
+console.log("Produtos ativos:", ativos)

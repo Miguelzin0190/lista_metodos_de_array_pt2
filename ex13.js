@@ -4,3 +4,9 @@ const produtos = [
   { id: 3, nome: "Teclado", preco: 150, estoque: 10, ativo: false },
   { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
+
+const eve = produtos.every((produtos) =>
+  produtos.preco > 50
+)
+
+console.log("Todos os produtos custam mais que 50 reais?", eve)

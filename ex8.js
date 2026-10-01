@@ -4,3 +4,9 @@ const produtos = [
   { id: 3, nome: "Teclado", preco: 150, estoque: 10, ativo: false },
   { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
+
+const ind = produtos.findIndex ((produto) =>
+  produto.ativo === false
+)
+
+console.log("Índice produto inativo:", ind)

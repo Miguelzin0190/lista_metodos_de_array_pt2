@@ -4,3 +4,9 @@ const produtos = [
   { id: 3, nome: "Teclado", preco: 150, estoque: 10, ativo: false },
   { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
+
+const som = produtos.some ((produto) =>
+  produto.preco > 3000
+)
+
+console.log("Tem pelo menos um produto que custa mais de 3000 reais?", som)
